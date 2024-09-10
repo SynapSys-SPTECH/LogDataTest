@@ -25,7 +25,7 @@ public class Main2 {
 
 
         // Definindo o tempo máximo de execução (em milissegundos)
-        long tempoMaximo = 900000; // 5 segundos (5000 ms)
+        long tempoMaximo = 900000; // 15Min (900000 ms)
         long tempoInicio = System.currentTimeMillis();
 
         while (true) {
@@ -61,10 +61,8 @@ public class Main2 {
                 break;
             }
 
-            // Simula uma tarefa que leva algum tempo para ser executada
-            // Isso é só para mostrar como a condição de tempo afeta um loop
             try {
-                Thread.sleep(2000); // Pausa de 100 milissegundos
+                Thread.sleep(2000);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
